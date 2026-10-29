@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Travel Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>My Travel Blog</h1>
+        <p>世界を旅する記録</p>
+    </header>
+
+    <nav>
+    <a href="index.html">HOME</a>
+    <a href="#travel">TRAVEL</a>
+    <a href="#about">ABOUT</a>
+</nav>
+
+    <main>
+        <h2 id="travel">最近の旅行</h2>
+
+<div class="search-box">
+    <input
+        type="search"
+        id="search-input"
+        placeholder="旅行先を検索..."
+        aria-label="旅行記事を検索"
+    >
+</div>
+
+<div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">
+        すべて
+    </button>
+
+    <button class="filter-btn" data-filter="usa">
+        アメリカ
+    </button>
+
+    <button class="filter-btn" data-filter="southamerica">
+        南米
+    </button>
+</div>
+
+<div class="card-container">
+
+    <div class="card"
+     data-category="usa"
+     data-keywords="アメリカ 国立公園 イエローストーン 自然">
+        <img src="images/nationalpark1.jpg"
+             alt="アメリカの旅行写真"
+             class="travel-image1">
+        <h3>アメリカ国立公園巡り</h3>
+        <p>雄大な自然を楽しむロードトリップ！</p>
+<a href="usa.html" class="read-more">
+    記事を読む →
+</a>
+
+    </div>
+
+    <div class="card"
+     data-category="southamerica"
+     data-keywords="南米 リマ クスコ ペルー ボリビア マチュピチュ ウユニ イグアス レインボーマウンテン">
+        <img src="images/southamerica1.jpg"
+             alt="南米の旅行写真"
+             class="travel-image2">
+        <h3>南米旅行</h3>
+        <p>マチュピチュやウユニ塩湖を訪れる旅。</p>
+        <a href="southamerica.html" class="read-more">
+    記事を読む →
+</a>
+    </div>
+
+</div>
+
+<p id="search-message" aria-live="polite"></p>
+        
+<section id="about">
+    <h2>このブログについて</h2>
+    <p>旅行先での体験やおすすめスポットを紹介しています。</p>
+</section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 My Travel Blog</p>
+    </footer>
+    
+<script src="script.js"></script>
+
+</body>
+</html>
